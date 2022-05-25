@@ -1,0 +1,22 @@
+{
+	"version": 3,
+	"file": "estilos.css",
+	"sources": [
+		"../scss/estilos.scss",
+		"../scss/_base.scss",
+		"../scss/_estructura.scss",
+		"../scss/_colores.scss",
+		"../scss/_decoracion.scss",
+		"../scss/_responsive.scss"
+	],
+	"sourcesContent": [
+		"@import 'base';\r\n@import 'estructura';\r\n@import 'colores';\r\n@import 'decoracion';\r\n@import 'responsive';",
+		"* {\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\nhtml {\r\n    font-size: 62.5%\r\n}",
+		"/*Estructura del sitio*/\r\n\r\nsection {\r\n    display: flex;\r\n}\r\nul {\r\n    list-style: none;\r\n    li {\r\n        background-color: yellow;\r\n        a {\r\n            display: block;\r\n            &:hover {\r\n                color: red;\r\n            }\r\n        }\r\n    }\r\n}\r\nsection {\r\n    h2 {\r\n        font-size: 24px;\r\n    }\r\n    p {\r\n        font-family: Arial, Helvetica, sans-serif;\r\n    }\r\n    @media (min-width: 768px) {\r\n        background-color: yellow;\r\n    }\r\n    div {\r\n\r\n        @media (min-width: 768px) {\r\n            flex-grow: 1;\r\n        }\r\n    }\r\n\r\n}\r\n",
+		"$colorPrimario: rgb(211, 11, 11);\r\n\r\n\r\n/*Colores del sitio*/ \r\nh1 {\r\n    color: $colorPrimario; //211, 11, 11\r\n}\r\nh2, h3, h4 {\r\n    color: blue;\r\n}\r\n.intenso {\r\n    color: $colorPrimario; //211, 11, 11\r\n}",
+		"div {\r\n    border: 1px solid;\r\n    &.destacado {\r\n        background-color: beige;\r\n    }\r\n}",
+		"@media (min-width: 768px) {\r\n    div {\r\n        flex-grow: 1;\r\n    }\r\n}"
+	],
+	"names": [],
+	"mappings": ";ACAA,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;CACb;;;AACD,AAAA,IAAI,CAAC;EACD,SAAS,EAAE,KACf;CAAC;;ACND,wBAAwB;;AAExB,AAAA,OAAO,CAAC;EACJ,OAAO,EAAE,IAAI;CAChB;;;AACD,AAAA,EAAE,CAAC;EACC,UAAU,EAAE,IAAI;CAUnB;;;AAXD,AAEI,EAFF,CAEE,EAAE,CAAC;EACC,gBAAgB,EAAE,MAAM;CAO3B;;;AAVL,AAIQ,EAJN,CAEE,EAAE,CAEE,CAAC,CAAC;EACE,OAAO,EAAE,KAAK;CAIjB;;;AATT,AAMY,EANV,CAEE,EAAE,CAEE,CAAC,AAEI,MAAM,CAAC;EACJ,KAAK,EAAE,GAAG;CACb;;;AAIb,AACI,OADG,CACH,EAAE,CAAC;EACC,SAAS,EAAE,IAAI;CAClB;;;AAHL,AAII,OAJG,CAIH,CAAC,CAAC;EACE,WAAW,EAAE,4BAA4B;CAC5C;;AACD,MAAM,EAAE,SAAS,EAAE,KAAK;;EAP5B,AAAA,OAAO,CAAC;IAQA,gBAAgB,EAAE,MAAM;GAS/B;;;AALO,MAAM,EAAE,SAAS,EAAE,KAAK;;EAZhC,AAUI,OAVG,CAUH,GAAG,CAAC;IAGI,SAAS,EAAE,CAAC;GAEnB;;;AC7BL,qBAAqB;;AACrB,AAAA,EAAE,CAAC;EACC,KAAK,EALO,OAAgB;CAM/B;;;AACD,AAAA,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC;EACP,KAAK,EAAE,IAAI;CACd;;;AACD,AAAA,QAAQ,CAAC;EACL,KAAK,EAXO,OAAgB;CAY/B;;;ACZD,AAAA,GAAG,CAAC;EACA,MAAM,EAAE,SAAS;CAIpB;;;AALD,AAEI,GAFD,AAEE,UAAU,CAAC;EACR,gBAAgB,EAAE,KAAK;CAC1B;;ACJL,MAAM,EAAE,SAAS,EAAE,KAAK;;EACpB,AAAA,GAAG,CAAC;IACA,SAAS,EAAE,CAAC;GACf"
+}

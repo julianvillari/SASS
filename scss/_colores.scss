@@ -1,0 +1,13 @@
+$colorPrimario: rgb(211, 11, 11);
+
+
+/*Colores del sitio*/ 
+h1 {
+    color: $colorPrimario; //211, 11, 11
+}
+h2, h3, h4 {
+    color: blue;
+}
+.intenso {
+    color: $colorPrimario; //211, 11, 11
+}
